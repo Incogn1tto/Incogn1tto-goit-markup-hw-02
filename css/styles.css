@@ -1,0 +1,134 @@
+/* main txt color #212121 */
+
+/* double txt color #FFFFFF */
+
+/* accent color #2196F3 */
+
+/* logo colors #2196F3 and #000000 */
+
+/* auth and paragraph colors #757575 */
+
+:root {
+    --primary-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+}
+
+/* index.html styles*/
+
+/* logo */
+.logo-web {
+    color: #2196F3;
+}
+.logo-studio {
+    color: #000000;
+}
+
+.list {
+    list-style: none;
+}
+
+/* navigation */
+
+.site-nav .link {
+    color: var(--primary-text-color)
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus  {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* auth */
+
+.auth a {
+    color: #757575;
+}
+
+.auth a:hover, 
+.auth a:focus {
+    color: var(--accent-color)
+}
+
+
+/* hero */
+   /* button */
+
+   .button {
+    color: #ffffff;
+    background-color: #2196F3;
+    border-color: transparent;
+        width: 216px;
+        height: 50px;
+        left: 692px;
+        top: 430px;
+   }
+   .button:hover,
+   .button:focus {
+    color: #2196F3;
+    background-color: #ffffff;
+    border-color: transparent;
+        width: 216px;
+        height: 50px;
+        left: 692px;
+        top: 430px;
+   }
+
+
+/* section-team */
+
+.section-team {
+    background-color: #F5F4FA;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-logo-web {
+    color: #2196F3;
+}
+
+.footer-logo-studio {
+    color: #ffffff;
+}
+
+.address {
+    color: #ffffff;
+}
+
+.contacts {
+    color: rgba(225, 225, 225, 0.6);
+}
+
+
+/* portfolio styles */
+
+.btn-filter {
+    color: #000000;
+        background-color: #F5F4FA;
+        border-color: transparent;
+}
+
+.btn-filter.current {
+    color: #ffffff;
+        background-color: #2196F3;
+        border-color: transparent;
+}
+
+
+.btn-filter:hover
+ {
+    color: #ffffff;
+    background-color: #2196F3;
+    border-color: transparent;
+}
