@@ -176,7 +176,7 @@ body {
 
 .btn-filter {
   color: var(--additional-color);
-  background-color: var(--secondary-color);
+  background-color:#F5F4FA;
   border-color: transparent;
   cursor: pointer;
 }
