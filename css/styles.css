@@ -12,16 +12,19 @@
   --primary-text-color: #212121;
   --accent-color: #2196f3;
   --secondary-color: #ffffff;
-  --additional-color: #000000;
-  --section-and-auth-color: #757575;
-  --footer-bg-color: #2f303a;
+  --primary-additional-color: #000000;
+  --secondary-additional-color: #757575;
+  --secondary-bg-color: #2f303a;
+  --hero-button-bg-color: #188CE8;
+  --filter-btn-team-section-bg-color: #F5F4FA;
 }
 
 body {
   background-color: var(--secondary-color);
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03;
 }
 
 /* index.html styles*/
@@ -37,7 +40,7 @@ body {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.2;
-  color: var(--additional-color);
+  color: var(--primary-additional-color);
   text-decoration: none;
 }
 
@@ -66,7 +69,7 @@ body {
 /* auth */
 
 .auth a {
-  color: var(--section-and-auth-color);
+  color: var(--secondary-additional-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,11 +83,17 @@ body {
 
 /* hero */
 
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--secondary-color);
 }
 
@@ -92,22 +101,37 @@ body {
 
 .hero-button {
   color: var(--secondary-color);
-  background-color: var(--accent-color);
+  background-color: var(--hero-button-bg-color);
   border-color: transparent;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   cursor: pointer;
+  letter-spacing: 0.06em;
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
   border-color: transparent;
 }
 
 /* section */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .section-title {
   font-weight: 700;
@@ -122,23 +146,35 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 .feature-list .text {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--section-and-auth-color);
+  color: var(--secondary-additional-color);
 }
 
 /* section-team */
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--filter-btn-team-section-bg-color);
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.member-possition {
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 /* footer */
 
 .footer {
-  background-color: var(--footer-bg-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .footer-logo-web {
@@ -164,6 +200,11 @@ body {
   color: var(--secondary-color);
 }
 
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+
 .contacts {
   font-style: normal;
   font-size: 14px;
@@ -171,12 +212,20 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
 
 /* portfolio styles */
 
 .btn-filter {
-  color: var(--additional-color);
-  background-color:#F5F4FA;
+  color: var(--primary-additional-color);
+  background-color: var(--filter-btn-team-section-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
   border-color: transparent;
   cursor: pointer;
 }
@@ -187,8 +236,24 @@ body {
   border-color: transparent;
 }
 
-.btn-filter:hover {
+.btn-filter:hover,
+.btn-filter:focus {
   color: var(--secondary-color);
   background-color: var(--accent-color);
   border-color: transparent;
+}
+
+/* projects */
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-descr {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-additional-color);
 }
