@@ -24,7 +24,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 /* index.html styles*/
@@ -228,6 +228,7 @@ body {
   line-height: 1.6;
   border-color: transparent;
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 
 .btn-filter.current {
